@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.chatapp.presentation.controllers.chatController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="724.0" prefWidth="477.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <HBox fx:id="subscribe_field" alignment="CENTER" prefHeight="64.0" prefWidth="480.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="userName_txt" prefHeight="56.0" prefWidth="428.0" promptText="Please enter your name">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+                  <FontAwesomeIconView fx:id="subscribe_btn" glyphName="ARROW_CIRCLE_ALT_RIGHT" size="40" />
+               </children>
+            </HBox>
+            <ListView fx:id="listView" prefHeight="588.0" prefWidth="480.0" />
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="480.0" spacing="15.0">
+               <children>
+                  <TextField fx:id="chat_txt" prefHeight="42.0" prefWidth="422.0" />
+                  <FontAwesomeIconView fx:id="send_btn" glyphName="PAPER_PLANE" size="25" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
